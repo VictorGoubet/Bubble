@@ -71,6 +71,7 @@ class Simulation(app.Canvas):
         self.program["circles"] = texture
         self.program["num_circles"] = self.n
         self.program["maxSpeed"] = maxSpeed
+        self.program["u_time"] = 0
 
     def on_timer(self, event) -> None:
         """Handle timer events to update bubble positions and render the scene.
